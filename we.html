@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чому саме ми? - English for soul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-pink-100 text-blue-900 font-roboto">
+  <nav class="fixed top-0 w-full bg-blue-900 text-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center">
+        <img src="logo.gif" alt="Логотип Путівник" class="w-16 h-16 mr-3"> 
+        Путівник
+      </h1>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-pink-300 transition">Головна</a>
+        <a href="offers.html" class="hover:text-pink-300 transition">Чому саме ми?</a>
+        <a href="alaska.html" class="hover:text-pink-300 transition">Ціни</a>
+        <button id="registerBtn" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded transition">Реєстрація/Вхід</button>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="registerModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+      <div class="flex justify-between mb-4">
+        <button id="showRegister" class="text-blue-900 hover:text-pink-500 font-bold">Реєстрація</button>
+        <button id="showLogin" class="text-blue-900 hover:text-pink-500">Вхід</button>
+      </div>
+      <div id="registerFormContainer">
+        <h2 class="text-2xl font-bold mb-4 text-blue-900">Реєстрація</h2>
+        <form id="registerForm" class="space-y-4">
+          <div>
+            <label for="regName" class="block text-sm font-medium">Ім'я</label>
+            <input type="text" id="regName" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+          </div>
+          <div>
+            <label for="regEmail" class="block text-sm font-medium">Електронна пошта</label>
+            <input type="email" id="regEmail" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+          </div>
+          <div>
+            <label for="regPassword" class="block text-sm font-medium">Пароль</label>
+            <input type="password" id="regPassword" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+          </div>
+          <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white p-2 rounded transition">Зареєструватися</button>
+        </form>
+      </div>
+      <div id="loginFormContainer" class="hidden">
+        <h2 class="text-2xl font-bold mb-4 text-blue-900">Вхід</h2>
+        <form id="loginForm" class="space-y-4">
+          <div>
+            <label for="loginEmail" class="block text-sm font-medium">Електронна пошта</label>
+            <input type="email" id="loginEmail" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+          </div>
+          <div>
+            <label for="loginPassword" class="block text-sm font-medium">Пароль</label>
+            <input type="password" id="loginPassword" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+          </div>
+          <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white p-2 rounded transition">Увійти</button>
+        </form>
+      </div>
+      <button id="closeModal" class="mt-4 text-blue-900 hover:text-pink-500">Закрити</button>
+    </div>
+  </div>
+      
+      <h3 class="text-xl mb-4">Наша школа англійської мови є номером один в Україні за рівнем навчання та студентів, які склали IELTS на 7.0 та вище. </h3>
+      <h3 class="text-xl mb-4">Ми пропонуємо як онлайн, так і офлайн заняття в зручний для вас час. </h3>
+      <h3 class="text-xl mb-4">Також, кваліфіковані спеціалісти допоможуть вам з підготовкою до IELTS, TOEFL, FCE, CEA, та інших тестів. </h3>
+      <h3 class="text-xl mb-8">Можливість займатись не тільки індивідуально, а й в групах або парах, а також приймати участь у Speaking Club для покращення розмовних навичок та знаходження друзів.</h3>
+      <h2 class="text-2xl font-bold mb-4">Люди, які стали успішними, пройшовши наші курси:</h2>
+      <ul class="list-disc list-inside mb-8">
+        <li class="flex items-center">
+          <img src="https://sayakidirali.online/wp-content/uploads/elementor/thumbs/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-06-20_045826-removebg-qqu7l4snket74vftfu495e955xr3xn1igrpkwxyws0.png" style="width:350px">
+          Сая Кідіралі, яка з нашою допомогою здала IELTS на 9.0
+        </li>
+        <li class="flex items-center">
+          <img src="https://yt3.googleusercontent.com/Ii9DiGALdgy3u-da0b03MeRzhGDCyJuQYAlGcF0hd7zfBSFlNOTbaMMRF4tlXH9biY8ovL5A=s900-c-k-c0x00ffffff-no-rj" style="width:350px">Асель Амангельди
+      </ul>
+      <h2 class="text-2xl font-bold mb-4">Зв’яжіться з нами:</h2>
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.facebook.com/turfirmafiesta/?locale=ru_RU" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" class="w-16 hover:opacity-80 transition">
+        </a>
+        <a href="https://www.instagram.com/tourmydream/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" class="w-16 hover:opacity-80 transition">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const registerBtn = document.getElementById('registerBtn');
+    const registerModal = document.getElementById('registerModal');
+    const closeModal = document.getElementById('closeModal');
+    const showRegister = document.getElementById('showRegister');
+    const showLogin = document.getElementById('showLogin');
+    const registerFormContainer = document.getElementById('registerFormContainer');
+    const loginFormContainer = document.getElementById('loginFormContainer');
+    const registerForm = document.getElementById('registerForm');
+    const loginForm = document.getElementById('loginForm');
+
+    registerBtn.addEventListener('click', () => {
+      registerModal.classList.remove('hidden');
+      registerFormContainer.classList.remove('hidden');
+      loginFormContainer.classList.add('hidden');
+    });
+
+    closeModal.addEventListener('click', () => {
+      registerModal.classList.add('hidden');
+    });
+
+    registerModal.addEventListener('click', (e) => {
+      if (e.target === registerModal) {
+        registerModal.classList.add('hidden');
+      }
+    });
+
+    showRegister.addEventListener('click', () => {
+      registerFormContainer.classList.remove('hidden');
+      loginFormContainer.classList.add('hidden');
+    });
+
+    showLogin.addEventListener('click', () => {
+      loginFormContainer.classList.remove('hidden');
+      registerFormContainer.classList.add('hidden');
+    });
+
+    registerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('regName').value;
+      const email = document.getElementById('regEmail').value;
+      const password = document.getElementById('regPassword').value;
+
+      if (name && email && password) {
+        alert('Реєстрація успішна! Ласкаво просимо, ' + name + '!');
+        registerModal.classList.add('hidden');
+        registerForm.reset();
+      } else {
+        alert('Будь ласка, заповніть усі поля.');
+      }
+    });
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+
+      if (email && password) {
+        alert('Вхід успішний! Ласкаво просимо!');
+        registerModal.classList.add('hidden');
+        loginForm.reset();
+      } else {
+        alert('Будь ласка, заповніть усі поля.');
+      }
+    });
+  </script>
+</body>
+</html>
